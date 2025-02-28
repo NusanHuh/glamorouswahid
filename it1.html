@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLAMOROUS IT WAHID</title>
+    <link rel="icon" type="image/webp" href="/asset/logoixitone.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B');
+
+        ::-webkit-scrollbar {
+            width: 7px;
+            height: 7px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #000;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #fff;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #c9c9c9;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            user-select: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            overflow-y: hidden;
+        }
+
+        .logo333 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 150px;
+        }
+
+        .imgimm {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .imglogoawal1 {
+            width: 300px;
+            border-radius: 30px;
+        }
+        .imglogoawal2 {
+            width: 230px;
+            border-radius: 30px;
+            left: -50px;
+            top: -60px;
+        }
+        .imglogoawal3 {
+            width: 230px;
+            border-radius: 30px;
+            left: 130px;
+            bottom: -80px;
+        }
+
+        .glamorousteksawal1 {
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .pglamorous1 {
+            font-family: 'Rubik', sans-serif; font-weight: 700; font-size: 25px; background: transparent;
+        }
+
+        .glamoroustentang {
+            width: 350px; background: transparent; font-family: 'Poppins', sans-serif; margin-top: 7px; font-weight: 600; text-align: center;
+        }
+
+        .tentangkamiyangdisukai {
+            z-index: 3; display: grid; grid-template-columns: repeat(3, 1fr); background-color: transparent; gap: 30px; margin-top: 50px;
+        }
+
+
+
+        .fufufafa1 {
+            font-family: 'Rubik', sans-serif;
+        }
+        .fufufafa2 {
+            font-family: 'Rubik', sans-serif;
+        }
+        .fufufafa3 {
+            font-size: 14px;
+        }
+        .fufufafa4 {
+            height: 170px;
+        }
+        .fufufafa5 {
+            font-family: 'Rubik', sans-serif;
+        }
+
+        .visit {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            opacity: 0.5;
+            display: none;
+            z-index: 1000;
+        }
+
+        .isivisitnya {
+            width: 90%;
+            max-width: 400px;
+            height: auto;
+            padding: 30px;
+            background-color: #000;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0px 0px 100px #000000;
+            border-radius: 10px;
+            display: none; /* Flex */
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1001;
+        }
+
+        @media (max-width: 768px) {
+            .logo333 {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                place-items: center;
+                gap: 0px;
+                padding-top: 30px;
+            }
+            .imglogoawal1 {
+                width: 230px;
+                border-radius: 20px;
+            }
+            .imglogoawal2 {
+                width: 130px;
+                border-radius: 10px;
+                left: -15px;
+                top: -30px;
+            }
+            .imglogoawal3 {
+                width: 100px;
+                border-radius: 10px;
+                top: 130px;
+                left: 140px;
+            }
+
+            .pglamorous1 {
+                font-size: 20px;
+                text-align: center;
+                margin-top: 35px;
+            }
+
+            .glamoroustentang {
+                font-size: 12px;
+                width: 100%; padding: 13px;
+                margin-top: -3px;
+            }
+
+            .tentangkamiyangdisukai {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .fufufafa1 {
+                font-size: 15px;
+            }
+            .fufufafa2 {
+                font-size: 14px;
+            }
+            .fufufafa3 {
+                font-size: 13px;
+            }
+            .fufufafa4 {
+                height: 160px;
+            }
+            .fufufafa5 {
+                font-size: 15px;
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 1024px) {
+            .tentangkamiyangdisukai {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .logo333 {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                place-items: center;
+                gap: 0px;
+                padding-top: 30px;
+            }
+            .imglogoawal1 {
+                width: 230px;
+                border-radius: 20px;
+            }
+            .imglogoawal2 {
+                width: 130px;
+                border-radius: 10px;
+                left: -15px;
+                top: -30px;
+            }
+            .imglogoawal3 {
+                width: 100px;
+                border-radius: 10px;
+                top: 130px;
+                left: 140px;
+            }
+
+            .pglamorous1 {
+                font-size: 20px;
+                text-align: center;
+                margin-top: 35px;
+            }
+
+            .glamoroustentang {
+                font-size: 12px;
+                width: 100%; padding: 13px;
+                margin-top: -3px;
+            }
+
+            .fufufafa1 {
+                font-size: 15px;
+            }
+            .fufufafa2 {
+                font-size: 14px;
+            }
+            .fufufafa3 {
+                font-size: 13px;
+            }
+            .fufufafa4 {
+                height: 160px;
+            }
+            .fufufafa5 {
+                font-size: 15px;
+            }
+        }
+
+        #bodymuncul {
+            display: block;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            position: fixed;
+            background-color: #c9c9c9;
+            z-index: 2000;
+        }
+        #captcha-container {
+            z-index: 2001;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            background: transparent;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .buttonnavmembukaapatuhkepoakujiralamakngakbahayatalololokokkebongkar-pokoknya-yang-liat-ini-jangan-di-ambil-ya-kodenya-please-allah-sedang-melihat {
+            width: 30px; /* 30px */
+            height: 30px; /* 30px */
+            background-color: #000000;
+            position: absolute;
+            top: 20px; /* 20px */
+            right: 20px; /* 20px */
+            border-radius: 10px; /* 10px */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 1s ease;
+            padding: 16px;
+            overflow: hidden;
+        }
+
+        .menuicon-jangan-colong-ya-bro {
+            background: transparent;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 700;
+            font-family: 'Rubik', sans-serif;
+            cursor: pointer;
+            display: block; /* Block */
+            margin-bottom: 1px;
+        }
+
+        .menuxxx-lololo-kokgitu-ngak-bahaya-ta {
+            display: none; /* Flex */
+            align-items: center;
+            justify-content: center;
+            top: 20px;
+            right: 20px;
+            background-color: #ffffff;
+            color: #000000;
+            width: 32px;
+            height: 32px;
+            border-radius: 10px;
+            opacity: 0;
+            transition: all 1s ease-in-out;
+            font-family: 'Rubik', sans-serif; font-weight: 700; cursor: pointer; position: absolute;
+            z-index: 1999;
+        }
+
+        .iwakmenunyaidsini {
+            background-color: transparent;
+            width: 100%;
+            max-width: 370px;
+            display: none; /* Flex */
+            opacity: 0;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: all 1s ease;
+        }
+    </style>
+</head>
+<body id="bodybodybody">
+    <div id="captcha-container">
+        <h3 style="font-family: 'Poppins', sans-serif; background-color: transparent;">Keamanan Google</h3>
+        <div class="g-recaptcha" data-sitekey="6LeVCOQqAAAAAHH7QFDB2KpkM1nSiL_S_XvpAllN"></div>
+        <button style="font-family: 'Poppins', sans-serif; width: 130px; height: 40px; border-radius: 30px; border: none; background-color: #000000; color: #ffffff; font-weight: 600; cursor: pointer;" onclick="cekCaptcha()">Konfirmasi</button>
+    </div>
+    <div id="bodymuncul"></div>
+
+    <p onclick="closemenunya()" class="menuxxx-lololo-kokgitu-ngak-bahaya-ta">X</p>
+    <div onclick="membukamenunyaini_ayoayo_gayang_fufufafa_wkwkwkwkwk()" class="buttonnavmembukaapatuhkepoakujiralamakngakbahayatalololokokkebongkar-pokoknya-yang-liat-ini-jangan-di-ambil-ya-kodenya-please-allah-sedang-melihat">
+        <p class="menuicon-jangan-colong-ya-bro">&#9776;</p>
+
+        <div class="iwakmenunyaidsini">
+            <p style="background-color: #fff; font-family: 'Rubik', sans-serif; padding-top: 5px; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; border-radius: 30px; font-size: 15px; font-weight: 600; display: flex; align-items: center; justify-content: center;">Menu List</p>
+
+            <div style="width: 100%; max-width: 300px; height: 400px; padding: 17px; margin-top: 40px; border-radius: 20px; display: flex; align-items: center; justify-content: center; flex-direction: column; position: relative; background-color: #ffffff;">
+                <img onclick="tiktok()" style="width: 37px; border-radius: 50%; position: absolute; top: 20px; left: 20px; cursor: pointer;" src="/asset/logoixitone.webp" alt="wkwkwk">
+                <img onclick="instagram()" style="width: 37px; border-radius: 50%; position: absolute; top: 20px; left: 40px; cursor: pointer;" src="/asset/glamorouslogoig.jpg" alt="wkwkwk">
+
+                <p id="menuTitle" style="background: transparent; font-family: 'Rubik', sans-serif; font-weight: 700; color: #ffffff; font-size: 12px; background-color: #000000; padding-top: 5px; padding-bottom: 5px; padding-right: 20px; padding-left: 20px; border-radius: 30px; box-shadow: 0px 0px 10px #000000; position: absolute; top: 27px; right: 20px;">MTsN Kota Probolinggo</p>
+
+                <div id="menuImage" style="width: 210px; height: 170px; margin-top: 30px; padding: 10px; border-radius: 30px; background-image: url('/asset/mtsn.jpeg'); background-size: cover; background-position: center; box-shadow: 0px 0px 30px #000000; margin-bottom: 30px;"></div>
+
+                <button id="linkButton" style="width: 100px; height: 40px; border: none; border-radius: 30px; background-color: #000000; color: #ffffff; position: absolute; bottom: 20px; font-family: 'Poppins', sans-serif; font-weight: 600; cursor: pointer;">Click</button>
+                <button id="nextBtn" style=" width: 40px; height: 40px; border: none; border-radius: 30px; background-color: #000000; color: #fff; font-family: 'Poppins', sans-serif; font-weight: 600; position: absolute; bottom: 20px; right: 30px; cursor: pointer;">></button>
+                <button id="prevBtn" style=" width: 40px; height: 40px; border: none; border-radius: 30px; background-color: #000000; color: #fff; font-family: 'Poppins', sans-serif; font-weight: 600; position: absolute; bottom: 20px; left: 30px; cursor: pointer;"><</button>
+            </div>
+        </div>
+    </div>
+
+    <div style="position: absolute; top: 0; width: 100%; height: 100vh; background-image: url('/asset/image2.jpeg'); background-size: cover; background-position: center; opacity: 0.19;"></div>
+
+    <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100vh; background-color: transparent;">
+        <div class="logo333" style="align-items: center; justify-content: center; position: relative; background-color: transparent;">
+            <div style="position: relative; background-color: transparent;">
+                <img class="imglogoawal1" style="box-shadow: 0px 0px 1000px;" src="/asset/image1.jpeg" alt="logo">
+                <img class="imglogoawal2" style="box-shadow: 0px 0px 1000px; position: absolute;" src="/asset/image4.jpeg" alt="logo1">
+                <img class="imglogoawal3" style="box-shadow: 0px 0px 1000px; position: absolute;" src="/asset/image3.jpeg" alt="logo2">
+            </div>
+            <div class="glamorousteksawal1">
+                <p class="pglamorous1">GLAMOROUS</p>
+                <p class="glamoroustentang">Glamorous, kelas kreatif yang di bimbing oleh Bapak Malik Marzuki, S.pd. </p>
+                <button onclick="pembukaanvisit()" style="width: 100px; margin-top: 20px; padding: 7px; border: none; border-radius: 30px; background-color: #000; color: #fff; font-family: 'Poppins', sans-serif; font-weight: 500; cursor: pointer;">Visit</button>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 100%; height: auto; background-color: #000; display: flex; flex-direction: column; padding: 50px; align-items: center; position: relative; z-index: 1;">
+
+        <p class="fufufafa1" style="font-weight: 700; background-color: #fff; width: 200px; color: #000; text-align: center; padding: 5px; border-radius: 30px;">Hal Yang Kami Suka</p>
+
+        <div class="tentangkamiyangdisukai">
+            <div class="fufufafa4" style="padding: 20px; width: 250px; background-color: #fff; border-radius: 30px;">
+                <p class="fufufafa2" style="font-weight: 700; background-color: #000; color: #fff; padding: 3px; width: 100px; text-align: center; border-radius: 10px;">Main UNO</p>
+                <p class="fufufafa3" style="font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 13px; background-color: transparent;">Kami dan teman - teman sangat senang bermain uno apa lagi unonya berfariasi tuh.</p>
+            </div>
+            <div class="fufufafa4" style="padding: 20px; width: 250px; background-color: #fff; border-radius: 30px;">
+                <p class="fufufafa2" style="font-weight: 700; background-color: #000; color: #fff; padding: 3px; width: 100px; text-align: center; border-radius: 10px;">Rujaan</p>
+                <p class="fufufafa3" style="font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 13px; background-color: transparent;">Terkadang kami IT wahid rujaan tuh ketika ada acara atau secara pribadi mau mengadakan sendiri.</p>
+            </div>
+            <div class="fufufafa4" style="padding: 20px; width: 250px; background-color: #fff; border-radius: 30px;">
+                <p class="fufufafa2" style="font-weight: 700; background-color: #000; color: #fff; padding: 3px; width: 100px; text-align: center; border-radius: 10px;">Ultah</p>
+                <p class="fufufafa3" style="font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 13px; background-color: transparent;">Jika salah satu guru dari IT wahid sedang ultah, kami akan mengadakannya di kelas.</p>
+            </div>
+            <div class="fufufafa4" style="padding: 20px; width: 250px; background-color: #fff; border-radius: 30px;">
+                <p class="fufufafa2" style="font-weight: 700; background-color: #000; color: #fff; padding: 3px; width: 100px; text-align: center; border-radius: 10px;">Menghias</p>
+                <p class="fufufafa3" style="font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 13px; background-color: transparent;">Khususnya untuk perempuan IT wahid nihh, suka menghias saat ada acara seperti agustusan, dll.</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 100%; height: auto; padding: 50px; display: flex; align-items: center; flex-direction: column;">
+        <p class="fufufafa5" style="font-weight: 700; background-color: #000; width: 200px; color: #fff; text-align: center; padding: 5px; padding-left: 3px; padding-right: 3px; border-radius: 30px;">List Music Glamorous</p>
+
+        <div style="margin-top: 30px;">
+            <iframe src="https://open.spotify.com/embed/playlist/2SOJj953mRHAzxAQhZCgOr" width="275" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <button onclick="openspotify()" style="font-family: 'Poppins', sans-serif; width: 200px; height: 40px; border: none; border-radius: 30px; background-color: #000; color: #fff; font-weight: 500; margin-top: 30px; cursor: pointer;">Buka Spotify</button>
+    </div>
+
+    <div style="width: 100%; height: 40px; background-color: #000; border-radius: 0px 20px 0px 00px; display: flex; align-items: center; padding: 10px;">
+        <p style="font-family: 'Poppins', sans-serif; background-color: transparent; color: #fff; font-size: 12px; font-weight: 600;">Ⓒ GLAMOROUS | Made by IT WAHID</p>
+    </div>
+
+    <div class="visit"></div>
+    <div class="isivisitnya">
+        <p onclick="closevisitisi()" style="position: absolute; top: 17px; right: 17px; background-color: transparent; color: #fff; font-family: 'Rubik', sans-serif; font-weight: 700; cursor: pointer;">X</p>
+        <p style="font-family: 'Rubik', sans-serif; background-color: #fff; width: 100px; text-align: center; padding: 5px; border-radius: 30px; border: none; color: #000000; font-weight: 500; font-size: 15px;">Visit</p>
+    
+        <img onclick="tiktok()" style="position: absolute; border-radius: 50%; top: 92px; left: 35px; cursor: pointer;" width="37px" src="/asset/logoixitone.webp" alt="">
+        <img onclick="instagram()" style="position: absolute; border-radius: 50%; top: 150px; left: 35px; cursor: pointer;" width="37px" src="/asset/logoixitone.webp" alt="">
+        <button onclick="tiktok()" style="font-family: 'Poppins', sans-serif; width: 100%; height: 45px; margin-top: 30px; border: none; border-radius: 10px; background-color: #fff; color: #000000; font-size: 13px; font-weight: 600; cursor: pointer;">Glamorous it one | TT</button>
+        <button onclick="instagram()" style="font-family: 'Poppins', sans-serif; width: 100%; height: 45px; margin-top: 13px; border: none; border-radius: 10px; background-color: #fff; color: #000000; font-size: 13px; font-weight: 600; cursor: pointer;">Glamorous it one | IG</button>
+    </div>
+
+    <script defer>
+        function delay(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        async function membukamenunyaini_ayoayo_gayang_fufufafa_wkwkwkwkwk() {
+            const iwaknya_jangan_lupa = document.querySelector(".buttonnavmembukaapatuhkepoakujiralamakngakbahayatalololokokkebongkar-pokoknya-yang-liat-ini-jangan-di-ambil-ya-kodenya-please-allah-sedang-melihat");
+            const ya_allah_hari_ini_saya_mokel = document.querySelector(".menuicon-jangan-colong-ya-bro");
+            const bodybodybody = document.getElementById("bodybodybody");
+            const menuxxx_lololo_kokgitu_ngak_bahaya_ta = document.querySelector(".menuxxx-lololo-kokgitu-ngak-bahaya-ta");
+            const iwakmenunyaidsini = document.querySelector(".iwakmenunyaidsini");
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+            iwaknya_jangan_lupa.style.width = "100%";
+            iwaknya_jangan_lupa.style.height = "100%";
+            iwaknya_jangan_lupa.style.top = "0";
+            iwaknya_jangan_lupa.style.right = "0";
+            iwaknya_jangan_lupa.style.borderRadius = "0px";
+            iwaknya_jangan_lupa.style.cursor = "auto";
+            ya_allah_hari_ini_saya_mokel.style.display = "none";
+            bodybodybody.style.overflowY = "hidden";
+
+            await delay(300);
+
+            menuxxx_lololo_kokgitu_ngak_bahaya_ta.style.display = "flex";
+
+            await delay(300);
+
+            menuxxx_lololo_kokgitu_ngak_bahaya_ta.style.opacity = "1";
+
+            await delay(300);
+
+            iwakmenunyaidsini.style.display = "flex";
+
+            await delay(300);
+
+            iwakmenunyaidsini.style.opacity = "1";
+        }
+
+        async function closemenunya() {
+            const iwaknya_jangan_lupa = document.querySelector(".buttonnavmembukaapatuhkepoakujiralamakngakbahayatalololokokkebongkar-pokoknya-yang-liat-ini-jangan-di-ambil-ya-kodenya-please-allah-sedang-melihat");
+            const ya_allah_hari_ini_saya_mokel = document.querySelector(".menuicon-jangan-colong-ya-bro");
+            const bodybodybody = document.getElementById("bodybodybody");
+            const menuxxx_lololo_kokgitu_ngak_bahaya_ta = document.querySelector(".menuxxx-lololo-kokgitu-ngak-bahaya-ta");
+            const iwakmenunyaidsini = document.querySelector(".iwakmenunyaidsini")
+
+            menuxxx_lololo_kokgitu_ngak_bahaya_ta.style.opacity = "0";
+
+            await delay(1000);
+
+            menuxxx_lololo_kokgitu_ngak_bahaya_ta.style.display = "none";
+            iwakmenunyaidsini.style.opacity = "0";
+
+            await delay(500);
+
+            iwakmenunyaidsini.style.display = "none";
+
+            await delay(100);
+
+            iwaknya_jangan_lupa.style.width = "30px";
+            iwaknya_jangan_lupa.style.height = "30px";
+            iwaknya_jangan_lupa.style.top = "20px";
+            iwaknya_jangan_lupa.style.right = "20px";
+            iwaknya_jangan_lupa.style.borderRadius = "10px";
+            iwaknya_jangan_lupa.style.cursor = "pointer";
+
+            await delay(300);
+
+            ya_allah_hari_ini_saya_mokel.style.display = "block";
+            bodybodybody.style.overflowY = "auto";
+        }
+    </script>
+
+    <script>
+        const images = [
+            { img: "/asset/mtsn.jpeg", text: "MTsN Kota Probolinggo", link: "https://www.mtsnkotaprobolinggo.sch.id/" },
+            { img: "/asset/image1.jpeg", text: "Foto | Glamorous", link: "/glamorousphoto.html" },
+            { img: "/asset/videophoto.jpeg", text: "Video | Glamorous", link: "/glamorousvideo.html" },
+            { img: "/asset/logoixitone.webp", text: "Wali Kelas | Glamorous", link: "/walikelasglamorous.html" },
+            { img: "/asset/creatorlogo.webp", text: "Website Desain", link: "/creatorinfo.html" }
+        ];
+
+        let currentIndex = 0;
+
+        function updateContent() {
+            document.getElementById("menuImage").style.backgroundImage = `url(${images[currentIndex].img})`;
+            document.getElementById("menuTitle").innerText = images[currentIndex].text;
+            document.getElementById("linkButton").onclick = () => window.location.href = images[currentIndex].link;
+        }
+
+        document.getElementById("nextBtn").addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateContent();
+        });
+
+        document.getElementById("prevBtn").addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateContent();
+        });
+
+        updateContent();
+
+        function pembukaanvisit() {
+            const visit = document.querySelector(".visit");
+            const isivisitnya = document.querySelector(".isivisitnya");
+            const bodybodybody = document.getElementById("bodybodybody");
+
+            visit.style.display = "block";
+            isivisitnya.style.display = "flex";
+            bodybodybody.style.overflowY = "hidden";
+        }
+
+        function closevisitisi() {
+            const visit = document.querySelector(".visit");
+            const isivisitnya = document.querySelector(".isivisitnya");
+            const bodybodybody = document.getElementById("bodybodybody");
+
+            visit.style.display = "none";
+            isivisitnya.style.display = "none";
+            bodybodybody.style.overflowY = "scroll";
+        }
+
+        function tiktok() {
+            window.location.href = "https://www.tiktok.com/@glamorous.aitiwahid?_t=ZS-8uD1RdWevKs&_r=1";
+        }
+
+        function instagram() {
+            window.location.href = "https://www.instagram.com/glamorous.aitiwahid?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==";
+        }
+
+        function openspotify() {
+            window.location.href = "https://open.spotify.com/playlist/2SOJj953mRHAzxAQhZCgOr?si=f-xnzkqZR022aGUuSi8B3A&utm_medium=share&utm_source=linktree";
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            if (sessionStorage.getItem("captchaVerified")) {
+                tampilkanKonten();
+            }
+        });
+
+        function cekCaptcha() {
+            var response = grecaptcha.getResponse();
+            if (response.length === 0) {
+                alert("Verifikasi anda bukan robot untuk melanjutkan | Glamorous SOLID THE TEAM | Made by IT WAHID, Security by GOOGLE");
+            } else {
+                sessionStorage.setItem("captchaVerified", "true");
+                tampilkanKonten();
+            }
+        }
+
+        function tampilkanKonten() {
+            document.getElementById("captcha-container").style.display = "none";
+            document.getElementById("bodymuncul").style.display = "none";
+            document.getElementById("bodybodybody").style.overflowY = "scroll";
+        }
+    </script>
+</body>
+</html>

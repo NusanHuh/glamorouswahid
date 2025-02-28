@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLAMOROUS IT WAHID</title>
+    <link rel="icon" type="image/webp" href="/asset/logoixitone.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta name="google-site-verification" content="TBNt7r4D4_ehgM3i2Vf_Nwf3wbiA_tIZdYkqW4rzjAg" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #c9c9c9;
+            font-family: 'Poppins', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            user-select: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow-y: hidden;
+        }
+
+        .blacktransition {
+            display: none;
+            opacity: 0;
+            position: fixed;
+            top: 0;
+            transition: all 1s ease;
+            background-color: #000000;
+        }
+
+        .teksglamorous {
+            position: fixed;
+            background-color: transparent;
+            display: none;
+            opacity: 0;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: auto;
+            width: auto;
+            transition: all 1s ease;
+        }
+
+        #bodymuncul {
+            display: block;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            position: absolute;
+            background-color: #c9c9c9;
+        }
+        #captcha-container {
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            background: transparent;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="captcha-container">
+        <h3 style="background-color: transparent;">Keamanan Google</h3>
+        <div class="g-recaptcha" data-sitekey="6LeVCOQqAAAAAHH7QFDB2KpkM1nSiL_S_XvpAllN"></div>
+        <button style="width: 130px; height: 40px; border-radius: 30px; border: none; background-color: #000000; color: #ffffff; font-weight: 600; cursor: pointer;" onclick="cekCaptcha()">Konfirmasi</button>
+    </div>
+    <div id="bodymuncul"></div>
+
+    <img style="border-radius: 10px; width: 110px; box-shadow: 0px 0px 1000px #000000;" src="/asset/logoixitone.webp" alt="logoixitone">
+    <p style="background-color: transparent; margin-top: 17px; font-size: 20px; font-weight: 700;">@Masaproitsatu</p>
+    <button onclick="blacktransition()" style="margin-top: 30px; background-color: #000000; color: #ffffff; width: 130px; border-radius: 30px; height: 40px; border: none; font-weight: 500; cursor: pointer;">Continue</button>
+
+    <div class="blacktransition" style="width: 100%; height: 100%;"></div>
+
+    <div class="teksglamorous">
+        <p style="background-color: transparent; font-weight: 800; font-size: 30px; color: #ffffff; display: inline-block; border: 3px solid #ffffff; padding: 5px;">WELCOME</p>
+        <p style="background-color: transparent; font-weight: 500; font-size: 13px; color: #000000; display: inline-block; background-color: #ffffff; padding-top: -10px; padding-left: 7px; padding-right: 7px; border-radius: 30px; display: flex; align-items: center; justify-content: center; position: absolute; margin-top: 57px;">TO GLAMOROUS</p>
+    </div>
+
+    <script>
+        function blacktransition() {
+            const blacktransition = document.querySelector(".blacktransition");
+            const teksglamorous = document.querySelector(".teksglamorous");
+
+            blacktransition.style.display = "block";
+            setTimeout(function() {
+                blacktransition.style.opacity = "1";
+            }, 100);
+            setTimeout(function() {
+                teksglamorous.style.display = "flex";
+            }, 1000);
+            setTimeout(function() {
+                teksglamorous.style.opacity = "1";
+            }, 1500);
+            setTimeout(function() {
+                teksglamorous.style.opacity = "0";
+            }, 3500);
+            setTimeout(function() {
+                blacktransition.style.backgroundColor = "#c9c9c9";
+            }, 4500);
+            setTimeout(function() {
+                window.location.href = "it1.html"
+            }, 5500);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            if (sessionStorage.getItem("captchaVerified")) {
+                tampilkanKonten();
+            }
+        });
+
+        function cekCaptcha() {
+            var response = grecaptcha.getResponse();
+            if (response.length === 0) {
+                alert("Verifikasi anda bukan robot untuk melanjutkan | Glamorous SOLID THE TEAM | Made by IT WAHID, Security by GOOGLE");
+            } else {
+                sessionStorage.setItem("captchaVerified", "true");
+                tampilkanKonten();
+            }
+        }
+
+        function tampilkanKonten() {
+            document.getElementById("captcha-container").style.display = "none";
+            document.getElementById("bodymuncul").style.display = "none";
+        }
+    </script>
+</body>
+</html>
