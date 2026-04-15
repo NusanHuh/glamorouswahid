@@ -196,7 +196,7 @@ const images = [
 ];
 let currentIndex = 0;
 function updateContent() {
-document.getElementById("menuImage").style.backgroundImage = url(${images[currentIndex].img});
+document.getElementById("menuImage").style.backgroundImage = `url(${images[currentIndex].img})`;
 document.getElementById("menuTitle").innerText = images[currentIndex].text;
 document.getElementById("linkButton").onclick = () => window.location.href = images[currentIndex].link;
 }
